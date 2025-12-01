@@ -18,15 +18,15 @@ To discover all the active hosts in the local network using ARP scanning and ana
 
 ## Netdiscover Result Explanation
 
-### Host 1 -> <gateway-ip>
+### Host 1 -> `<gateway-ip>`
 -> This is the VirtualBox Host-Only Gateway
 -> Vendor showing "Unknown" is normal
 
-### Host 2 -> <target-ip>
+### Host 2 -> `<target-ip>`
 -> This is "Metasploitable2 VM"
 -> MAC vendor: PCS Systemtechnik GmbH, this is the vendor of VirtualBox virtual NIC
 
-### Host 3 -> <kali-ip>
+### Host 3 -> `<kali-ip>`
 -> This is "Kali Linux VM"
 -> Same Vendor
 
