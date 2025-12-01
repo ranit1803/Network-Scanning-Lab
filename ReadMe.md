@@ -2,9 +2,13 @@
 
 ARP Scan (Netdiscover) + ICMP Ping + Wireshark Analysis
 
+---
+
 ## Lab Description
 
 Performed ARP-based host discovery and ICMP reachability testing in a virtual LAN using Kali Linux and Metasploitable2. Used Netdiscover and Wireshark to examine ARP broadcasts/replies and ICMP echo packets, learning how host discovery works at Layer-2 and Layer-3. All IP and MAC details are masked for security.
+
+---
 
 ## Folder Structure
 
@@ -27,6 +31,8 @@ src/
 screenshots/
 ```
 
+---
+
 ## Tools Used
 
 * Kali Linux (Attacker VM)
@@ -36,6 +42,8 @@ screenshots/
 * Ping (ICMP)
 * Wireshark
 
+---
+
 ## Network Setup
 
 Both VMs were configured on a Host-Only Adapter to ensure they remained inside the same LAN. This is required because ARP works only within a single broadcast domain.
@@ -44,6 +52,8 @@ Both VMs were configured on a Host-Only Adapter to ensure they remained inside t
 * Metasploitable2 IP: `<target-ip>/24`
 
 All IPs and MACs are masked for privacy.
+
+---
 
 ## Part 1 — ARP Scan (Netdiscover)
 
@@ -74,6 +84,8 @@ Captured packets included:
 
 This confirmed correct Layer-2 communication.
 
+---
+
 ## Part 2 — ICMP Ping Scan
 
 ### Command Used
@@ -97,6 +109,8 @@ Captured:
 * ICMP Echo Reply
 * ID, sequence numbers, and TTL (masked)
 
+---
+
 ## ARP Scan vs ICMP Ping
 
 | Feature                 | ARP Scan       | ICMP Ping         |
@@ -108,6 +122,8 @@ Captured:
 | Works across networks   | No             | Yes               |
 | Purpose                 | Host discovery | Host reachability |
 
+---
+
 ## Key Learnings
 
 * ARP is essential for discovering devices inside a LAN
@@ -116,7 +132,11 @@ Captured:
 * NAT + Bridged setups break ARP scanning; Host-Only is required
 * VirtualBox NIC vendor is PCS Systemtechnik GmbH (normal for VMs)
 
+---
+
 ## Security Disclaimer
 
 All IP addresses, MAC addresses, and sensitive identifiers in this repo are masked or blurred to prevent exposure of real device information.
+
+---
 
