@@ -3,6 +3,8 @@
 ## Objective
 To discover all the active hosts in the local network using ARP scanning and analyze ARP traffic using Wireshark
 
+---
+
 ## Why ARP Scan?
 -> Address Resolution Protocol works at **Layer 2 (Data Link Layer)**.
 -> It maps IP Addresses to MAC Addressess inside a Local Network
@@ -11,6 +13,8 @@ To discover all the active hosts in the local network using ARP scanning and ana
     - Finds all the machine in the local network
     - It's faster
     - Used for basic network reconnaissance
+
+---
 
 ## Netdiscover Result Explanation
 
@@ -26,6 +30,8 @@ To discover all the active hosts in the local network using ARP scanning and ana
 -> This is "Kali Linux VM"
 -> Same Vendor
 
+---
+
 ## Wireshark ARP Packet Analysis
 
 ### ARP Request (Broadcast)
@@ -39,6 +45,8 @@ This shows that:
     - Metasploitable replied with its MAC
     - Devices are communicating at Layer 2
     - Both hosts exist inside the same LAN
+
+---
 
 ## Conclusion
 * All hosts in the LAN responded to ARP requests.
