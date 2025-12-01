@@ -1,0 +1,21 @@
+----------------------------
+Netdiscover ARP Scan Output
+----------------------------
+
+Command used:
+sudo netdiscover -r <network-range>/24
+
+Results (IP and MAC masked for privacy):
+
+IP Address          MAC Address         Vendor
+----------------------------------------------------------------
+<gateway-ip>        <hidden>            Unknown
+<target-ip>         <hidden>            PCS Systemtechnik GmbH
+<kali-ip>           <hidden>            PCS Systemtechnik GmbH
+----------------------------------------------------------------
+
+Summary:
+• Multiple active hosts discovered in the local network
+• ARP replies received from all active hosts
+• Vendor "PCS Systemtechnik GmbH" indicates VirtualBox virtual NICs
+• This proves Kali, Metasploitable2, and Host-Only gateway are active
